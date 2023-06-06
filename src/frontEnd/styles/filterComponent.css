@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+.filterComponent {
+  padding: 1.1rem 2.2rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 22%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  transform: translateX(-100%);
+  transition: all 0.4s;
+}
+
+.showModal {
+  transform: translateX(0%);
+}
+
+.filter__component__heading {
+  position: absolute;
+  padding: 0.7rem 2rem;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  color: white;
+  background-color: black;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.resetButton {
+  position: relative;
+  font-size: 1rem;
+  width: 100%;
+  margin: 1rem auto 1.25rem auto;
+  padding: 0.5rem 0;
+  /* font-weight: 700; */
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.15rem;
+}
+
+.resetButton:hover {
+  background-color: rgb(40, 40, 40);
+}
+.priceMeter {
+  margin-top: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #dbdbdb;
+  /* gap: 1.5rem; */
+  > h3 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.closeBtn {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0 0 0.25rem 0.25rem;
+  border-color: white;
+  cursor: pointer;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  cursor: pointer;
+  accent-color: rgb(0, 0, 0);
+}
+
+.slider::before {
+  position: absolute;
+  content: "₹800";
+  top: -0.7rem;
+  margin-left: 0.05rem;
+  font-weight: 700;
+}
+
+.slider::after {
+  position: absolute;
+  content: "₹50000";
+  top: -0.7rem;
+  right: 0;
+  font-weight: 600;
+  color: rgb(49, 49, 49);
+}
+
+.filterBrands {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* gap: 1.5rem; */
+  > h3 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 0.5rem;
+}
+
+.filterColors {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 0.5rem;
+  /* gap: 1.5rem; */
+  > h3 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+}
+
+.brandsSection {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brandsSectionPlusRating {
+  justify-content: space-between;
+}
+
+.unitBrand {
+  padding: 0.25rem 0.5rem;
+  background-color: #e2ebef;
+  margin: 0 0.35rem 0.5rem 0;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.unitBrandRating {
+  margin: 0 0rem 0.35rem 0;
+}
+
+.checkBox {
+  background-color: rgb(239, 239, 239);
+  background-color: aqua;
+}
+
+.colorUnitBrand {
+  font-size: 0.85rem;
+}
+
+.filterRating {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* gap: 1.5rem; */
+  > h3 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+
+  /* border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 1.75rem; */
+}
+
+.ratingsSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 0.5rem 0;
+  /* background-color: rgb(12, 16, 16); */
+  cursor: pointer;
+
+  /* flex-wrap: wrap; */
+  /* align-items: flex-start; */
+}
+
+.starsLine {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.starIcon {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.ratingMeter {
+  margin-top: 0.9rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding-bottom: 0.75rem;
+  border-bottom: 1px solid #dbdbdb; */
+  /* gap: 1.5rem; */
+  > h3 {
+    font-size: 1rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+}
+
+.ratingSlider {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  cursor: pointer;
+  accent-color: rgb(0, 0, 0);
+}
+
+.ratingSlider::before {
+  position: absolute;
+  content: "1.0";
+  top: -0.7rem;
+  margin-left: 0.05rem;
+  font-weight: 700;
+}
+
+.ratingSlider::after {
+  position: absolute;
+  content: "5.0";
+  top: -0.7rem;
+  right: 0;
+  font-weight: 600;
+  color: rgb(49, 49, 49);
+}

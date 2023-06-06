@@ -1,0 +1,232 @@
+.productCard {
+  box-sizing: border-box;
+  display: flex;
+  height: 15rem;
+  width: 28rem;
+  border: 2px solid #e7e7e7;
+  border-radius: 8px;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.productCard:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.banner {
+  margin: 0.5rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  position: relative;
+  width: 45%;
+  /* height: ; */
+  /* border: 2px solid; */
+  background-color: #f5f5f5;
+}
+
+.banner > img {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  top: 10%;
+  object-fit: contain;
+}
+
+.banner:hover {
+  cursor: pointer;
+}
+
+.banner > p:first-child {
+  position: absolute;
+  color: white;
+  background-color: black;
+  top: 0.3rem;
+  font-size: 12px;
+  font-weight: 700;
+
+  border-radius: 0px 6px 6px 0;
+  padding: 2px 4px;
+}
+
+.banner > p:last-child {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  background-color: #fcc50b;
+  /* top: 0.3rem; */
+  font-size: 12px;
+  border-radius: 0 0 0.4rem 0.4rem;
+  padding: 2px 4px;
+  font-weight: 700;
+  /* opacity: 0; */
+}
+
+.product__details {
+  position: relative;
+  width: 60%;
+  margin: 0.5rem 0.3rem 0 0;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.product__details .pricing {
+  position: relative;
+  /* left: 0;
+  right: 0; */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-items: space-evenly;
+  /* padding-bottom: 0.5rem; */
+  /* border-bottom: 1px solid; */
+}
+
+.rating__and__color {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e2ebef;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.pricing > p:first-child {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.pricing > p:nth-child(2) {
+  font-weight: 700;
+  color: rgb(90, 137, 90);
+  font-size: 1.1rem;
+}
+.pricing > p:last-child {
+  /* font-weight: 700; */
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+
+.delivery__line {
+  font-weight: 700;
+  font-size: large;
+}
+
+.lastLine {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+
+.lastLine > .addToCartButtonSection {
+  flex: 0 0 78%;
+  background-color: rgb(57, 57, 57);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  :hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.25rem;
+  }
+}
+.addToCartBtn {
+  /* background-color: black; */
+  color: white;
+  padding: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  font-family: "Orbitron";
+  word-spacing: 0.3rem;
+}
+
+.qtySection {
+  flex: 0 0 78%;
+  background-color: #e2ebef;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 4px;
+  > button {
+    padding: 0px 8px;
+    background-color: #e2ebef;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border: 0.5px solid rgb(207, 215, 216);
+    /* transition: #e2ebef 0.25s;  */
+  }
+  > button:hover {
+    border: 1px solid;
+  }
+}
+
+.qtySection > button:hover {
+  cursor: pointer;
+}
+
+/* .plusQty:hover {
+  background-color: #e2ebef;
+} */
+
+.removeFromCartButtonSection {
+  position: relative;
+  width: 100%;
+  > button {
+    background-color: #e2ebef;
+    font-family: "Orbitron";
+
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 4px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+  }
+  > button:hover {
+    border: 1px solid;
+    background-color: rgb(200, 20, 20);
+    color: white;
+  }
+}
+
+.addToFavouritesSection {
+  flex: 1;
+  background-color: #e2ebef;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 2px 0px;
+}
+
+.addToFavBtn {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.name__and__pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.75rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #e2ebef;
+}

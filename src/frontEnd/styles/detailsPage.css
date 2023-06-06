@@ -1,0 +1,234 @@
+.detailsPage {
+  font-family: "Orbitron", sans-serif;
+  position: relative;
+  margin: 0 4rem;
+  padding: 4rem 0rem 4rem;
+  display: flex;
+  align-items: center;
+  height: 110vh;
+  justify-content: space-between;
+}
+
+.imageDiv {
+  border: 1px solid;
+  position: relative;
+  width: 48%;
+  height: 85%;
+  background-color: #e2ebef;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+}
+
+.detailsDiv {
+  position: relative;
+  height: 85%;
+
+  width: 50%;
+  /* border: 1px solid; */
+}
+.imageDiv {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 4px solid #f0f0f0;
+  border-radius: 0.5rem;
+  /* gap: 1rem; */
+  /* background-color: blue; */
+}
+
+.imageSelector {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
+  width: 15%;
+  /* border-right: 2px solid #f0f0f0; */
+  /* gap: 2rem; */
+  /* background-color: pink; */
+  /* #ececec; */
+}
+
+.shortImage {
+  /* border-top: 2px solid black;
+  border-bottom: 2px solid black; */
+  border: 2px solid rgb(255, 255, 255);
+
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 30%;
+  border-radius: 4px;
+  margin: 1px;
+
+  /* border-bottom: 0.5px solid white; */
+  /* margin: auto; */
+
+  /* object-fit: contain; */
+}
+
+.shortImage > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shortImage:hover {
+  border: 3px solid black;
+  width: 98%;
+  cursor: pointer;
+}
+
+.mainImageSection {
+  position: relative;
+  width: 85%;
+  height: 100%;
+  padding: 0.25rem 1rem;
+  padding-right: 0.25rem;
+  top: 0;
+  /* object-fit: contain; */
+
+  /* bottom: 100px; */
+}
+
+.mainImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.detailsDiv {
+  position: relative;
+  height: 85%;
+
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.3rem;
+  padding: 0 1rem 0 2rem;
+}
+
+.detailsDiv > h1 {
+  padding-top: 0.15rem;
+  font-size: 2rem;
+}
+
+.pricingDetailPage {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pricingDetailPage > p:first-child {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.pricingDetailPage > p:nth-child(2) {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-decoration: line-through;
+  color: grey;
+}
+.pricingDetailPage > p:last-child {
+  /* font-weight: 700; */
+  font-weight: 700;
+  color: rgb(90, 137, 90);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.playback {
+  font-weight: 700;
+  color: grey;
+  font-size: 1.5rem;
+}
+
+.description {
+  /* align-self: flex-start; */
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  gap: 8px;
+  font-weight: 600;
+  position: relative;
+  width: 82%;
+  /* height: 20%; */
+  /* overflow: auto; */
+  /* text-overflow: ellipsis; */
+}
+
+.limitedDescription {
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: grey;
+  margin: auto 0;
+}
+
+.actualDescription {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  overflow: auto;
+  white-space: wrap;
+  overflow-wrap: break-word;
+  text-align: justify;
+  text-justify: inter-word;
+  word-spacing: 2px;
+  line-height: 1.35rem;
+  /* hyphens: auto; */
+  color: grey;
+}
+
+.ratingLine {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.ratingBar {
+  display: flex;
+  background-color: rgb(68, 145, 68);
+  color: white;
+  align-items: center;
+  padding: 2px 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.detailsToggler {
+  margin-left: 5rem;
+  font-family: "Orbitron", sans-serif;
+  border: none;
+
+  font-size: 1rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.cart__and__wishlistButtons {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  /* justify-content: space-between; */
+}
+
+.cart__and__wishlistButtons > p {
+  font-family: "Orbitron", sans-serif;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.75rem 1.2rem;
+  background-color: rgb(54, 54, 54);
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.cart__and__wishlistButtons > p:hover {
+  background-color: black;
+  cursor: pointer;
+}

@@ -1,0 +1,88 @@
+.cartPage {
+  padding: 6rem 10rem 10rem 10rem;
+  min-height: 110vh;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+}
+.emptyCartComponent {
+  padding: 5.5rem 10rem 10rem 10rem;
+  min-height: 100vh;
+  font-family: orbitron, sans-serif;
+  margin: auto;
+  > button {
+    background-color: rgb(64, 64, 64);
+    font-family: orbitron, sans-serif;
+    color: white;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+.emptyCartComponent > button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.cartSummary {
+  padding: 0.5rem 1rem;
+  flex: 0 0 40%;
+  gap: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 8.95rem;
+  right: 22rem;
+  > h2 {
+    font-family: orbitron, sans-serif;
+
+    text-align: center;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.cartItems {
+  align-self: flex-start;
+  text-align: center;
+  flex: 1;
+  > h1 {
+    font-family: orbitron, sans-serif;
+    position: relative;
+    text-align: left;
+  }
+}
+
+.summaryRow {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgb(226, 235, 239);
+  gap: 0.5rem;
+}
+.summaryColumn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkoutBtn {
+  margin: 1rem 0 0.5rem 0;
+  padding: 0.25rem 0 0.35rem 0;
+  background-color: rgb(57, 57, 57);
+  font-family: orbitron, sans-serif;
+
+  color: white;
+  border-radius: 0.2rem;
+}
+
+.checkoutBtn:hover {
+  background-color: black;
+  cursor: pointer;
+}

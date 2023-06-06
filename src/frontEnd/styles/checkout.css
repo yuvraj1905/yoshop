@@ -1,0 +1,102 @@
+.checkout {
+  padding: 6rem 10rem 10rem 10rem;
+  min-height: 110vh;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  align-items: flex-start;
+  margin-top: 2rem;
+  display: flex;
+  /* justify-content: ; */
+  gap: 5rem;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.chooseAddress {
+  flex: 0 0 60%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem 1rem 1rem;
+  position: relative;
+  /* background-color: aquamarine; */
+  text-align: left;
+  > h2 {
+    border-bottom: 1px solid #aaaaaa;
+    font-weight: 700;
+    text-align: left;
+    padding: 0.35rem;
+    font-family: orbitron, sans-serif;
+  }
+}
+
+.checkoutSummary {
+  width: 25%;
+  right: 15rem;
+  top: 8.1rem;
+}
+
+.checkoutPageBtn {
+  font-size: 1rem;
+  padding: 0.35rem 0.75rem;
+}
+
+.addressCardCheckout {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0.75rem 0;
+  gap: 1.25rem;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #e2ebef;
+}
+
+.checkoutSingleAddress {
+  /* position: relative; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.checkoutSingleAddress:hover {
+  cursor: pointer;
+}
+
+.orderSummaryCheckout {
+  flex: 1;
+  position: fixed;
+  right: 20rem;
+}
+
+.addNewAddressButtonCheckout {
+  width: 12rem;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem;
+  font-family: orbitron, sans-serif;
+  background-color: rgb(57, 57, 57);
+  color: white;
+  font-weight: 700;
+  display: flex;
+}
+
+.addNewAddressButtonCheckout:hover {
+  background-color: black;
+}
+
+.coupon {
+  background-color: #e2ebef;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.coupon:hover {
+  background-color: rgb(63, 105, 0);
+  cursor: pointer;
+  color: white;
+}

@@ -1,0 +1,165 @@
+:root {
+  --primary: "Orbitron", sans-serif;
+}
+.header {
+  display: flex;
+  background-color: white;
+  font-family: "Orbitron", sans-serif;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  position: fixed;
+  left: 0rem;
+  right: 0rem;
+  top: 0rem;
+  z-index: 3;
+}
+
+.app__logo {
+  font-size: 1.5rem;
+}
+
+/* .searchBar__and__navLinks {
+  position: relative;
+  width: 40%;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+} */
+
+.navLinks {
+  display: flex;
+  flex: 0 0 12rem;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: blue; */
+}
+
+/* .searchBar {
+  display: flex;
+  left: 1rem;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.75rem;
+  background-color: #f4f5f7;
+
+  border-radius: 2rem;
+  > input {
+    background-color: #f4f5f7;
+    align-self: flex-start;
+    border: none;
+    font-family: var(--primary);
+    width: 15rem;
+    font-size: 1rem;
+    outline: none;
+  }
+} */
+
+.previousSearchComponent {
+  /* width: 100; */
+
+  height: 2.2rem;
+  display: flex;
+  padding: 0 1.1rem;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+}
+
+.liveSearchComponent {
+  height: 3rem;
+  display: flex;
+  gap: 1rem;
+  background-color: white;
+  align-items: center;
+  padding: 0 1.1rem;
+  > img {
+    border-radius: 50%;
+  }
+}
+
+.liveSearchComponent:hover {
+  background-color: #e2ebef;
+  cursor: pointer;
+}
+
+.previousSearchComponent:hover {
+  background-color: #e2ebef;
+  cursor: pointer;
+}
+
+.previousSearch {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+}
+
+.searchSection {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 40rem;
+  padding: 0.05rem;
+  margin-left: 4rem;
+  position: relative;
+}
+
+.searchHeader {
+  display: flex;
+  /* flex: 0 0 20rem; */
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  > input {
+    border: 2px solid black;
+    border-radius: 0.15rem;
+    padding: 0.35rem 1.25rem;
+    font-size: 1rem;
+    font-family: orbitron, sans-serif;
+    width: 100%;
+    align-self: flex-start;
+    text-align: left;
+  }
+  > .searchIcon {
+    position: absolute;
+    right: 1rem;
+  }
+}
+
+.searchBarSection {
+  position: absolute;
+  max-height: 12rem;
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  border: 2px solid black;
+  top: 2.3rem;
+  flex-direction: column;
+  padding: 0rem 0rem;
+  z-index: 1000000;
+  background-color: white;
+}
+.cartLengthPopUp {
+  position: absolute;
+  top: -0.55rem;
+  right: 2.9rem;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  z-index: 1000;
+}
+.wishlistLengthPopUp {
+  position: absolute;
+  top: -0.55rem;
+  right: 6.4rem;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  z-index: 1000;
+}
