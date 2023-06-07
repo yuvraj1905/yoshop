@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://images.freeimages.com/clg/istock/previews/9868/98683535-fast-speed-two-lines-letter-y-icon-on-black.jpg" height="100" width="200" alt="yoShop-logo"/>
+  <img src="https://images.freeimages.com/clg/istock/previews/9868/98683535-fast-speed-two-lines-letter-y-icon-on-black.jpg" height="150" width="200" alt="yoShop-logo"/>
   
 # Yo-Shop
 ## Be a Yo-shopper !  
@@ -33,4 +33,6 @@
 - Razorpay payment gateway
 - Mockbee Backend
 
-<!-- ## **Demo -** -->
+## **Demo -**
+
+[Click here to see app demo](https://www.loom.com/share/3f1456b5be2a4e459f0af05121a21c3d)
