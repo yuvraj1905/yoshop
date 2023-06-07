@@ -34,7 +34,6 @@ export function addressAndOrderReducer(state, { type, payload }) {
     }
 
     case "orderPlaced": {
-      console.log(payload, "reducerrrrr");
       return { ...state, orders: [...state.orders, payload] };
     }
 

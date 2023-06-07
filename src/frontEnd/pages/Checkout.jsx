@@ -58,10 +58,8 @@ const Checkout = () => {
   const addressData = addresses.map((address) => (
     <AddressCardCheckout data={address} />
   ));
-  console.log(addressSelected);
 
   const currentAddress = addresses?.find(({ id }) => id === addressSelected);
-  // console.log(currentAddress);
 
   const characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";

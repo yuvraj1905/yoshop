@@ -1,11 +1,5 @@
 import axios from "axios";
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useReducer,
-  useState,
-} from "react";
+import { createContext, useContext, useEffect, useReducer } from "react";
 import { userStateReducer } from "../reducers/userStateReducer";
 
 const AuthContext = createContext();
@@ -35,7 +29,6 @@ const AuthContextComponent = ({ children }) => {
         email: email,
         password: password,
       });
-      console.log(response.data.encodedToken, "signup");
     } catch (err) {
       console.log(err);
     }
@@ -47,7 +40,6 @@ const AuthContextComponent = ({ children }) => {
         email: email,
         password: password,
       });
-      console.log(response);
       if (response.status === 200) {
         localStorage.setItem("token", response.data.encodedToken);
         localStorage.setItem(
@@ -71,27 +63,15 @@ const AuthContextComponent = ({ children }) => {
     dispatchUserState({ type: "logout" });
   };
 
-  console.log(localStorage.getItem("userLoggedIn"));
-  // console.log()
-
   useEffect(() => {
-    {
-      // localStorage.getItem("token") && setIsLoggedIn(true);
-      // localStorage.getItem("token") &&
-      // setLoggedInUserCredentials([
-      //   localStorage.getItem("userLoggedIn").lastName,
-      //   localStorage.getItem("userLoggedIn").email,
-      // ]);
-
-      localStorage.getItem("token") &&
-        dispatchUserState({
-          type: "credentialsSetter",
-          payload: [
-            JSON.parse(localStorage.getItem("userLoggedIn")).lastName,
-            JSON.parse(localStorage.getItem("userLoggedIn")).email,
-          ],
-        });
-    }
+    localStorage.getItem("token") &&
+      dispatchUserState({
+        type: "credentialsSetter",
+        payload: [
+          JSON.parse(localStorage.getItem("userLoggedIn")).lastName,
+          JSON.parse(localStorage.getItem("userLoggedIn")).email,
+        ],
+      });
   }, []);
   return (
     <AuthContext.Provider

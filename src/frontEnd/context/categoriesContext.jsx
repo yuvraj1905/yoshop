@@ -11,9 +11,7 @@ const CategoriesProvider = ({ children }) => {
         data: { categories },
         status,
       } = await axios.get("/api/categories");
-      console.log(categories);
       if (status === 200) setCategoriesList([...categories]);
-      console.log(categories);
     } catch (err) {
       console.log(err);
     }

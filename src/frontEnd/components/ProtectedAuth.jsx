@@ -7,7 +7,6 @@ const ProtectedAuth = ({ children }) => {
   const {
     userState: { isLoggedIn },
   } = useAuthContext();
-  console.log(typeof isLoggedIn, "HAHAHAHAHHAHAHH");
   return (
     <>
       {isLoggedIn ? (

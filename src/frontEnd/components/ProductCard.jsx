@@ -54,9 +54,6 @@ const ProductCard = ({ data, cartCard, wishlistCard }) => {
   const addedTowishlist = (data) =>
     wishlist.find(({ productId }) => data.productId === productId);
 
-  console.log(wishlist.length);
-  console.log(qty);
-
   return (
     <section
       className="productCard"

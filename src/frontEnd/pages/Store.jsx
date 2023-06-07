@@ -46,14 +46,13 @@ const Store = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log(window.scrollY);
       if (window.scrollY > 420) {
         setDisplayMovetotop(true);
       } else {
         setDisplayMovetotop(false);
       }
     });
-  }, [window.scrollY]);
+  }, []);
 
   const override = {
     position: "absolute",
@@ -136,6 +135,18 @@ const Store = () => {
             sideBar ? "storePage__content content__blur" : "storePage__content"
           }
         >
+          {finalRenderingData?.length > 0 ? (
+            <p className="productCount">
+              [ Showing{" "}
+              <span style={{ fontSize: "1.3rem" }}>
+                {finalRenderingData?.length}
+              </span>{" "}
+              products ]
+            </p>
+          ) : (
+            <p className="productCount">[ No products with such filters ]</p>
+          )}
+
           {finalRenderingData &&
             finalRenderingData.map((product) => <ProductCard data={product} />)}
         </section>

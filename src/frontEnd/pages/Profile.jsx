@@ -23,7 +23,6 @@ const Profile = () => {
     userState: { isLoggedIn },
   } = useAuthContext();
   const { profileRoute } = useParams();
-  console.log(profileRoute);
 
   const navlinkStyler = ({ isActive }) => ({
     borderBottom: isActive && "4px solid black",

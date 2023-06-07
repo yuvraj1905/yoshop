@@ -17,7 +17,6 @@ export const addToCartHandler = async (data, token, dispatchUserState) => {
         payload: response.data.cart,
       });
     }
-    console.log(response);
   } catch (err) {
     console.log(err);
   }
@@ -40,7 +39,6 @@ export const addToWishlistHandler = async (data, token, dispatchUserState) => {
         payload: response.data.wishlist,
       });
     }
-    console.log(response);
   } catch (err) {
     console.log(err);
   }
@@ -61,7 +59,6 @@ export const removeFromWishlistHandler = async (
         payload: response.data.wishlist,
       });
     }
-    console.log(response);
   } catch (err) {
     console.log(err);
   }
@@ -78,7 +75,6 @@ export const removeFromCartHandler = async (id, token, dispatchUserState) => {
         payload: response.data.cart,
       });
     }
-    console.log(response);
   } catch (err) {
     console.log(err);
   }

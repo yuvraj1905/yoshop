@@ -14,6 +14,17 @@
   overflow: hidden;
 }
 
+.productCount {
+  font-family: orbitron, sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: -2.5rem;
+  /* word-spacing: 0.1rem; */
+  /* padding: 0 0.25rem; */
+  left: 13rem;
+  font-size: 1.1rem;
+}
+
 .filter {
   display: flex;
   gap: 1rem;

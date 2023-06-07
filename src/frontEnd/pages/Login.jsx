@@ -34,7 +34,6 @@ const Login = () => {
         const {
           state: { from },
         } = location;
-        //   console.log(from);
         navigate(from);
       } else navigate("/profile/myprofile");
       toast.success("Login Successful ! Hola !", {
@@ -53,7 +52,6 @@ const Login = () => {
   const guestLogin = async () => {
     setEmail("yuvraj1905@gmail.com");
     setPassword("yuvraj1905");
-    // console.log(email, password);
     const ifFailedLogin = await loginBtnHandler(
       "yuvraj1905@gmail.com",
       "yuvraj1905"
@@ -64,7 +62,6 @@ const Login = () => {
         const {
           state: { from },
         } = location;
-        //   console.log(from);
         navigate(from);
       } else navigate("/profile/myprofile");
     }

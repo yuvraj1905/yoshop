@@ -36,7 +36,6 @@ const Cart = () => {
   );
 
   const totalDiscount = totalPriceWithoutDiscount - totalPriceWithDiscount;
-  console.log(totalPriceWithoutDiscount);
 
   useEffect(() => {
     dispatchStore({ type: "setDisplaySearchModal", payload: false });

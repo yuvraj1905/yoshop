@@ -20,7 +20,6 @@ const Signup = () => {
 
   const signupHandler = async (e) => {
     e.preventDefault();
-    // console.log(email,password)
     if (password === confirmPassword) {
       signupBtnHandler(name, email, password);
       navigate(from);

@@ -21,7 +21,6 @@ const Filter = () => {
   } = useStoreContext();
 
   const { categoriesList } = useCategoriesContext();
-  console.log(categoriesList);
 
   const fontStyler = {
     fontFamily: "Orbitron, sansSerif",
