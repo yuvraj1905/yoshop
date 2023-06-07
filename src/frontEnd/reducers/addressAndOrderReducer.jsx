@@ -37,6 +37,28 @@ export function addressAndOrderReducer(state, { type, payload }) {
       return { ...state, orders: [...state.orders, payload] };
     }
 
+    case "logout": {
+      return {
+        ...state,
+        addresses: [
+          {
+            id: 0,
+            name: "Yuvraj Thakur",
+            street: "123",
+            city: "Delhi",
+            pincode: 111111,
+            state: "Delhi",
+            country: "India",
+            Mobile: 8080225566,
+          },
+        ],
+        orders: [],
+        showModal: false,
+        count: 1,
+        addressSelected: 0,
+      };
+    }
+
     default:
       return { ...state };
   }

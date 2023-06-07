@@ -1,10 +1,12 @@
 import axios from "axios";
 import { createContext, useContext, useEffect, useReducer } from "react";
 import { userStateReducer } from "../reducers/userStateReducer";
+import { useAddressAndOrdersContext } from "./AddressAndOrdersContext";
 
 const AuthContext = createContext();
 
 const AuthContextComponent = ({ children }) => {
+  const { dispatchAddressAndOrders } = useAddressAndOrdersContext();
   const initialUserState = {
     isLoggedIn: localStorage.getItem("token") ? true : false,
     token: localStorage.getItem("token") ? localStorage.getItem("token") : "",
@@ -61,6 +63,7 @@ const AuthContextComponent = ({ children }) => {
     localStorage.removeItem("token");
     localStorage.removeItem("userLoggedIn");
     dispatchUserState({ type: "logout" });
+    dispatchAddressAndOrders({ type: "logout" });
   };
 
   useEffect(() => {

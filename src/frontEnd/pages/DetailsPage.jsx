@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import "../styles/detailsPage.css";
 import { AiFillStar } from "react-icons/ai";
 import ReactImageMagnify from "react-image-magnify";
@@ -64,6 +64,7 @@ function DetailsPageCard({ data }) {
   const { dispatchStore } = useStoreContext();
 
   const navigate = useNavigate();
+  const location = useLocation();
 
   const addedToCart = (data) =>
     cart.find(({ productId }) => data.productId === productId);
@@ -124,7 +125,7 @@ function DetailsPageCard({ data }) {
                 shouldHideHintAfterFirstActivation: false,
                 enlargedImageContainerDimensions: {
                   width: "126%",
-                  height: "110%",
+                  height: "100%",
                 },
                 hoverDelayInMs: 750,
                 enlargedImageContainerStyle: {
@@ -204,7 +205,13 @@ function DetailsPageCard({ data }) {
             <p
               onClick={(e) => {
                 e.stopPropagation();
-                addToCartHandler(data, token, dispatchUserState);
+                if (token) {
+                  addToCartHandler(data, token, dispatchUserState);
+                } else {
+                  navigate("/login", {
+                    state: { from: location.pathname },
+                  });
+                }
               }}
             >
               ADD TO CART
@@ -223,7 +230,13 @@ function DetailsPageCard({ data }) {
             <p
               onClick={(e) => {
                 e.stopPropagation();
-                addToWishlistHandler(data, token, dispatchUserState);
+                if (token) {
+                  addToWishlistHandler(data, token, dispatchUserState);
+                } else {
+                  navigate("/login", {
+                    state: { from: location.pathname },
+                  });
+                }
               }}
             >
               ADD TO WISHLIST

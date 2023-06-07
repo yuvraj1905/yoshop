@@ -4,7 +4,7 @@ import { BiShoppingBag } from "react-icons/bi";
 import { BsBagCheck } from "react-icons/bs";
 import "../styles/productCard.css";
 import { useStoreContext } from "../context/storeContext";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../context/AuthContext";
 import {
   addToCartHandler,
@@ -22,6 +22,8 @@ const ProductCard = ({ data, cartCard, wishlistCard }) => {
     store: { sideBar },
   } = useStoreContext();
   const navigate = useNavigate();
+  const location = useLocation();
+
   const {
     _id,
     productId,
@@ -119,17 +121,22 @@ const ProductCard = ({ data, cartCard, wishlistCard }) => {
                   className="addToCartBtn"
                   onClick={(e) => {
                     if (!sideBar) {
-                      addToCartHandler(data, token, dispatchUserState);
-                      toast.success(`${name} added to your cart!`, {
-                        position: "top-right",
-                        autoClose: 1500,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                        theme: "dark",
-                      });
+                      if (token) {
+                        addToCartHandler(data, token, dispatchUserState);
+                        toast.success(`${name} added to your cart!`, {
+                          position: "top-right",
+                          autoClose: 1500,
+                          hideProgressBar: false,
+                          closeOnClick: true,
+                          pauseOnHover: true,
+                          draggable: true,
+                          progress: undefined,
+                          theme: "dark",
+                        });
+                      } else
+                        navigate("/login", {
+                          state: { from: location.pathname },
+                        });
                     }
                   }}
                 >
@@ -253,18 +260,24 @@ const ProductCard = ({ data, cartCard, wishlistCard }) => {
                 size={25}
                 onClick={(e) => {
                   if (!sideBar) {
-                    e.stopPropagation();
-                    addToWishlistHandler(data, token, dispatchUserState);
-                    toast.success("Item added to your wishlist!", {
-                      position: "top-right",
-                      autoClose: 1000,
-                      hideProgressBar: false,
-                      closeOnClick: true,
-                      pauseOnHover: true,
-                      draggable: true,
-                      progress: undefined,
-                      theme: "dark",
-                    });
+                    if (token) {
+                      e.stopPropagation();
+                      addToWishlistHandler(data, token, dispatchUserState);
+                      toast.success("Item added to your wishlist!", {
+                        position: "top-right",
+                        autoClose: 1000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "dark",
+                      });
+                    } else {
+                      navigate("/login", {
+                        state: { from: location.pathname },
+                      });
+                    }
                   }
                 }}
                 title="ADD TO WISHLIST"

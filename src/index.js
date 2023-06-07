@@ -17,11 +17,11 @@ ReactDOM.render(
     <BrowserRouter>
       <CategoriesProvider>
         <StoreContextComponent>
-          <AuthContextComponent>
-            <AddressAndOrdersContextProvider>
+          <AddressAndOrdersContextProvider>
+            <AuthContextComponent>
               <App />
-            </AddressAndOrdersContextProvider>
-          </AuthContextComponent>
+            </AuthContextComponent>
+          </AddressAndOrdersContextProvider>
         </StoreContextComponent>
       </CategoriesProvider>
     </BrowserRouter>
