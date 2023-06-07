@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://res-console.cloudinary.com/yuvraj1905/thumbnails/v1/image/upload/v1686119487/eS1JY29uX3p5cXVhdQ==/as_is" height="100" width="200" alt="logo"/>
+  <img src="https://images.freeimages.com/clg/istock/previews/9868/98683535-fast-speed-two-lines-letter-y-icon-on-black.jpg" height="100" width="200" alt="yoShop-logo"/>
   
 # Yo-Shop
 ## Be a Yo-shopper !  
