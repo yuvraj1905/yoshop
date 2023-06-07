@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://asset.cloudinary.com/yuvraj1905/d756a8b266cf24f7d1638aea86b32a85" height="100" width="200" alt="logo"/>
+  <img src="https://res-console.cloudinary.com/yuvraj1905/thumbnails/v1/image/upload/v1686119487/eS1JY29uX3p5cXVhdQ==/as_is" height="100" width="200" alt="logo"/>
   
 # Yo-Shop
 ## Be a Yo-shopper !  
