@@ -124,7 +124,7 @@ function DetailsPageCard({ data }) {
                 shouldHideHintAfterFirstActivation: false,
                 enlargedImageContainerDimensions: {
                   width: "126%",
-                  height: "100%",
+                  height: "110%",
                 },
                 hoverDelayInMs: 750,
                 enlargedImageContainerStyle: {
