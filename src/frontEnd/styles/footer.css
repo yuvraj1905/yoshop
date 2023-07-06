@@ -26,3 +26,9 @@
   justify-content: center;
   gap: 2rem;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    width: 152%;
+  }
+}

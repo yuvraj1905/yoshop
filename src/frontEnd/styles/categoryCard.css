@@ -38,3 +38,10 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+  .categoryCard {
+    width: 44%;
+    height: 80%;
+  }
+}

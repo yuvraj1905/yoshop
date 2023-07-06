@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/home.css";
 import "../styles/categoryCard.css";
-import poster from "../assets/home_poster1.jpg";
+import poster from "../assets/home_poster1.webp";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import CategoryCard from "../components/CategoryCard";

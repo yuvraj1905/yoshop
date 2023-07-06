@@ -124,17 +124,19 @@ const Header = () => {
             e.stopPropagation();
           }}
         >
-          <section className="searchHeader">
+          <section
+            className="searchHeader"
+            onClick={(e) => {
+              e.stopPropagation();
+              dispatchStore({ type: "setDisplaySearchModal", payload: true });
+              dispatchStore({ type: "setDisplaySearchModal", payload: true });
+            }}
+          >
             <input
               ref={inputRef}
               onFocus={() =>
                 dispatchStore({ type: "setInpDisplay", payload: true })
               }
-              onClick={(e) => {
-                e.stopPropagation();
-                dispatchStore({ type: "setDisplaySearchModal", payload: true });
-                dispatchStore({ type: "setDisplaySearchModal", payload: true });
-              }}
               // onBlur={() =>
               //   !searchInput &&
               //   dispatchStore({ type: "setDisplaySearchModal", payload: false })
