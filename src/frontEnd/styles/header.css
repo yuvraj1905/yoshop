@@ -190,10 +190,6 @@
     /* background-color: rgb(152, 99, 29); */
   }
   .searchHeader {
-    /* position: absolute; */
-    /* right: -4.15rem; */
-    /* top: -0.15rem; */
-    /* flex: 0 0 20rem; */
     display: flex;
     width: 100%;
     justify-content: space-between;
