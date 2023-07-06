@@ -168,6 +168,7 @@
   z-index: 1000;
 }
 
+/* @media only screen and (min-width: 600px) { */
 @media only screen and (max-width: 768px) {
   .header {
     width: 100%;
@@ -186,14 +187,14 @@
     padding: 0.05rem;
     margin-left: 0rem;
     position: relative;
-    background-color: rgb(152, 99, 29);
+    /* background-color: rgb(152, 99, 29); */
   }
   .searchHeader {
     /* position: absolute; */
     /* right: -4.15rem; */
     /* top: -0.15rem; */
-    display: flex;
     /* flex: 0 0 20rem; */
+    display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -208,6 +209,8 @@
       align-self: flex-start;
       text-align: left;
     }
+  }
+  .searchHeader {
     > .searchIcon {
       display: none;
       /* position: absolute;

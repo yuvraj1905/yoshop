@@ -137,10 +137,6 @@ const Header = () => {
               onFocus={() =>
                 dispatchStore({ type: "setInpDisplay", payload: true })
               }
-              // onBlur={() =>
-              //   !searchInput &&
-              //   dispatchStore({ type: "setDisplaySearchModal", payload: false })
-              // }
               type="text"
               placeholder="Search for products or categories"
               value={searchInput}
