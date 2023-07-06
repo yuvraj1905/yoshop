@@ -155,7 +155,8 @@
   margin: 0 100px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
+@media (min-width: 600px) {
   .homePage {
     padding-bottom: 25rem;
     position: relative;

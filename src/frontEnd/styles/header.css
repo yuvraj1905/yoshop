@@ -164,7 +164,8 @@
   z-index: 1000;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
+@media (min-width: 600px) {
   .header {
     max-width: 100%;
     padding: 1rem 0.5rem;
