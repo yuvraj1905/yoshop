@@ -155,26 +155,28 @@
   margin: 0 100px;
 }
 
-/* @media (max-width: 768px) { */
-@media (min-width: 600px) {
+@media only screen and (max-width: 768px) {
+  /* @media (min-width: 600px) { */
   .homePage {
-    padding-bottom: 25rem;
+    padding-bottom: 12rem;
     position: relative;
     /* padding: 8px 2px; */
-    padding-top: 4.1rem;
+    padding-top: 3.5rem;
     /* padding-left: 1rem; */
-    width: 152%;
+    width: 100%;
     /* background-color: #03a9f4; */
   }
 
   .posterImg {
-    /* width: 100%; */
     position: relative;
+    /* width: 100%; */
 
     > img {
       /* height: 80%; */
       object-fit: cover;
-      height: 40vh;
+      margin: 0;
+      width: 100%;
+      height: 35vh;
     }
     > button {
       font-family: var(--primary);
@@ -191,7 +193,7 @@
     border-radius: 1rem; */
       font-weight: 800;
       position: absolute;
-      top: 13.5rem;
+      top: 11.5rem;
       right: 1rem;
       z-index: 2;
       text-transform: uppercase;
@@ -211,10 +213,10 @@
       -webkit-text-fill-color: transparent;
       animation: textclip 2s linear infinite;
       display: inline-block;
-      font-size: 1rem;
+      font-size: 0.6rem;
       border-color: white;
-      border-radius: 0.5rem;
-      padding: 0.4rem 0.5rem;
+      border-radius: 0.25rem;
+      padding: 0.2rem 0.3rem;
     }
     > button:hover {
       cursor: pointer;
@@ -225,9 +227,9 @@
     font-family: var(--primary);
     content: "NIRVANA";
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: white;
-    top: 8.5rem;
+    top: 7.5rem;
     right: 1rem;
     z-index: 2;
   }
@@ -235,9 +237,9 @@
     font-family: var(--primary);
     content: "PLUG INTO";
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: white;
-    top: 8.5rem;
+    top: 7.5rem;
     left: 1rem;
     z-index: 2;
   }
@@ -248,34 +250,35 @@
     position: relative;
     width: 100%;
     height: 50vh;
-    margin: 0px;
+    margin: 0;
     padding: 8px;
   }
 
   .shopByCategory__title {
     display: flex;
     background: #ffffff;
-    min-height: 8vh;
+    min-height: 6.5vh;
     align-items: center;
     justify-content: center;
     font-family: "Poppins", sans-serif;
     position: relative;
+    word-spacing: 0.13rem;
     /* padding: 1.5rem 1rem; */
   }
 
   .shopByCategory__title h2 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.3rem;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 2.3rem;
+    top: 1.75rem;
     /* margin: auto; */
     left: 50%;
   }
 
   .shopByCategory__title h2:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 2px #03a9f4;
+    -webkit-text-stroke: 1px #03a9f4;
   }
 
   .shopByCategory__title h2:nth-child(2) {

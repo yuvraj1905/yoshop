@@ -3,6 +3,7 @@
   position: relative;
   width: 25%;
   height: 100%;
+
   padding: 0;
   cursor: pointer;
   /* border: 1px solid; */
@@ -15,14 +16,15 @@
   transition: 0.3s ease-in-out;
 }
 
-.categoryCard > p {
+.catDescription {
   padding: 0.35rem 0.5rem;
+  font-size: 0.75rem;
 }
 
 .categoryCard > img {
   position: relative;
   width: 100%;
-  height: 75%;
+  height: 70%;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transition: 0.3s ease-in-out;
@@ -39,9 +41,15 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .categoryCard {
-    width: 44%;
-    height: 80%;
+    margin: auto;
+    width: 45%;
+    height: 60%;
+    margin-bottom: 1rem;
+  }
+  .catDescription {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.4rem;
   }
 }

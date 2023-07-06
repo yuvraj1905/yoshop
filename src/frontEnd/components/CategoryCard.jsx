@@ -20,7 +20,9 @@ const CategoryCard = ({ data }) => {
     >
       <img src={image[0]} alt="" />
       <h3 style={{ marginTop: "2px" }}>{name}</h3>
-      <p style={{ color: "grey", fontSize: "0.75rem" }}>{description}</p>
+      <p className="catDescription" style={{ color: "grey" }}>
+        {description}
+      </p>
     </section>
   );
 };

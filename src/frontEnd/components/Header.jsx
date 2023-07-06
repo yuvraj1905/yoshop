@@ -164,7 +164,7 @@ const Header = () => {
 
         <section className="navLinks">
           <NavLink to="/store">
-            <BiStoreAlt size={22} color="black" />
+            <BiStoreAlt className="navlink__icon" size={22} color="black" />
           </NavLink>
           <p
             className="wishlistLengthPopUp"
@@ -174,7 +174,7 @@ const Header = () => {
           </p>
 
           <NavLink to="/wishlist">
-            <AiOutlineHeart size={27} color="black" />
+            <AiOutlineHeart className="navlink__icon" size={27} color="black" />
           </NavLink>
           <p
             className="cartLengthPopUp"
@@ -183,10 +183,10 @@ const Header = () => {
             {cart.length >= 1 && cart.length}
           </p>
           <NavLink to="/cart">
-            <BsHandbag size={22} color="black" />
+            <BsHandbag className="navlink__icon" size={22} color="black" />
           </NavLink>
           <NavLink to="/profile/myprofile">
-            <AiOutlineUser size={25} color="black" />
+            <AiOutlineUser className="navlink__icon" size={25} color="black" />
           </NavLink>
         </section>
       </section>
