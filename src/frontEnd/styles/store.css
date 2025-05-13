@@ -81,3 +81,85 @@
   background-color: black;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .storePage {
+    padding: 6rem 1.5rem 7rem;
+  }
+
+  .filter,
+  .sort {
+    font-size: 0.9rem; /* Adjusted from 1rem and 0.9rem respectively */
+    padding: 0.4rem 0.6rem;
+  }
+  .filter {
+    gap: 0.5rem;
+  }
+
+  .dropdown {
+    font-size: 0.9rem;
+  }
+
+  .productCount {
+    font-size: 1rem;
+    left: 1.5rem; /* Adjusted from 13rem */
+    top: -2rem;
+  }
+
+  .storePage__content {
+    margin-top: 2rem; /* Increased margin if product count is above */
+    justify-content: space-around; /* Better for wrapping varying card counts */
+  }
+
+  .moveToTopBtn {
+    bottom: 4rem;
+    right: 0.5rem;
+    padding: 0.4rem 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .storePage {
+    padding: 5rem 1rem 6rem;
+  }
+
+  .storePage__filtersLine {
+    flex-direction: column;
+    align-items: stretch; /* Make items take full width available */
+    gap: 0.75rem; /* Space between stacked filter and sort */
+  }
+
+  .filter,
+  .sort {
+    width: 100%;
+    justify-content: center; /* Center text/icons within buttons */
+    font-size: 0.85rem;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .dropdown {
+    font-size: 0.85rem;
+  }
+
+  .productCount {
+    position: relative; /* Change from absolute */
+    top: auto;
+    left: auto;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem; /* Space above product count */
+    margin-bottom: 0.5rem; /* Space below product count, before cards */
+  }
+
+  .storePage__content {
+    margin-top: 0.5rem; /* Reduced margin as product count is now in flow */
+    justify-content: center; /* Center single column of product cards */
+  }
+
+  .moveToTopBtn {
+    bottom: 3rem;
+    right: 0.3rem;
+    padding: 0.3rem 0.4rem;
+    /* Consider making icons smaller if BiUpArrow allows */
+  }
+}

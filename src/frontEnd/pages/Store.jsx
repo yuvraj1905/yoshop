@@ -57,7 +57,8 @@ const Store = () => {
   const override = {
     position: "absolute",
     top: "50%",
-    left: "47.5%",
+    left: "50%",
+    transform: "translateX(-50%)",
     margin: "auto",
     borderColor: "red",
   };

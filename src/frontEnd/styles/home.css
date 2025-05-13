@@ -283,3 +283,47 @@
     animation: animate 4s ease-in-out infinite;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .homePage {
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+  }
+
+  .posterImg > img {
+    height: 30vh;
+  }
+
+  .posterImg > button {
+    font-size: 0.55rem;
+    top: 10rem;
+    right: 0.5rem;
+    padding: 0.15rem 0.25rem;
+  }
+
+  .posterImg::after {
+    font-size: 1rem;
+    top: 6.5rem;
+    right: 0.5rem;
+  }
+
+  .posterImg::before {
+    font-size: 1rem;
+    top: 6.5rem;
+    left: 0.5rem;
+  }
+
+  .shopByCategory__title {
+    min-height: 5.5vh;
+  }
+
+  .shopByCategory__title h2 {
+    font-size: 1rem;
+    top: 1.5rem;
+  }
+
+  .categories__section__homepage {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 4px;
+  }
+}

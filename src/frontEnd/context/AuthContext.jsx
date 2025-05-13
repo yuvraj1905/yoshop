@@ -37,6 +37,7 @@ const AuthContextComponent = ({ children }) => {
   };
 
   const loginBtnHandler = async (email, password) => {
+    console.log("loginBtnHandler called with", email, password);
     try {
       const response = await axios.post(`/api/auth/login`, {
         email: email,

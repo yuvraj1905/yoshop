@@ -251,3 +251,85 @@
   font-weight: 600;
   color: rgb(49, 49, 49);
 }
+
+@media only screen and (max-width: 768px) {
+  .filterComponent {
+    width: 35%;
+    padding: 1rem 1.5rem;
+  }
+
+  .filterComponent h3 { /* General selector for all h3s in filter */
+    font-size: 1rem;
+  }
+
+  .resetButton {
+    font-size: 0.9rem;
+  }
+
+  .unitBrand,
+  .colorUnitBrand {
+    font-size: 0.8rem;
+  }
+
+  /* Adjust slider text if needed */
+  .slider::before,
+  .slider::after,
+  .ratingSlider::before,
+  .ratingSlider::after {
+    font-size: 0.9em; /* Relative to parent */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .filterComponent {
+    width: 80%; /* Takes up more screen width on small mobiles */
+    padding: 0.8rem 1rem;
+    overflow-y: auto; /* Add scroll for potentially long content */
+  }
+
+  .filter__component__heading {
+    padding: 0.6rem 1rem;
+  }
+
+  .filter__component__heading h2 {
+    font-size: 1.1rem; /* Adjust if an h2 is used in the heading */
+  }
+
+  .filterComponent h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .priceMeter,
+  .filterBrands,
+  .filterColors,
+  .filterRating,
+  .ratingMeter {
+    margin-top: 0.7rem;
+    padding-bottom: 0.6rem;
+  }
+  .priceMeter {
+    margin-top: 2.5rem; /* Keep more space for price meter title */
+  }
+
+  .resetButton {
+    font-size: 0.85rem;
+    padding: 0.4rem 0;
+    margin: 0.8rem auto 1rem auto;
+  }
+
+  .unitBrand,
+  .colorUnitBrand {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.4rem;
+    margin: 0 0.3rem 0.4rem 0;
+  }
+
+  .slider::before,
+  .slider::after,
+  .ratingSlider::before,
+  .ratingSlider::after {
+    font-size: 0.8em;
+    top: -0.6rem;
+  }
+}

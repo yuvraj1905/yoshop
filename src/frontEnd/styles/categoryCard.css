@@ -53,3 +53,20 @@
     font-size: 0.4rem;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .categoryCard {
+    width: 85%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .categoryCard > img {
+    height: 65%;
+  }
+
+  .catDescription {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.5rem;
+  }
+}

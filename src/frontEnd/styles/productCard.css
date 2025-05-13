@@ -230,3 +230,153 @@
   padding-bottom: 0.8rem;
   border-bottom: 1px solid #e2ebef;
 }
+
+@media only screen and (max-width: 768px) {
+  .productCard {
+    width: 48%; /* Allows two cards per row with a small gap */
+    height: 14rem; /* Slightly reduce height */
+    margin: 1%; /* For spacing between cards */
+  }
+
+  .banner {
+    width: 40%; /* Adjust banner width */
+  }
+
+  .banner > img {
+    height: 75%;
+  }
+
+  .product__details {
+    gap: 0.5rem;
+    padding: 0 0.4rem;
+  }
+
+  .product__details .title {
+    font-size: 0.9rem; /* Assuming product title has a class, adjust as needed */
+  }
+
+  .pricing > p:first-child { /* Main price */
+    font-size: 1.1rem;
+  }
+  .pricing > p:nth-child(2) { /* Discount */
+    font-size: 1rem;
+  }
+  .pricing > p:last-child { /* Original price */
+    font-size: 0.7rem;
+  }
+
+  .rating__and__color {
+    gap: 1rem;
+    font-size: 0.75rem;
+  }
+
+  .addToCartBtn {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .qtySection {
+    font-size: 1rem;
+    padding: 3px 8px;
+  }
+  .qtySection > button {
+    font-size: 1rem;
+  }
+
+  .removeFromCartButtonSection > button {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .productCard {
+    width: 90%; /* Single card per row */
+    height: auto; /* Auto height for more flexibility */
+    margin: 0.75rem auto; /* Center the card */
+    flex-direction: column; /* Stack banner and details vertically */
+  }
+
+  .banner {
+    width: 100%; /* Banner takes full width */
+    height: 12rem; /* Fixed height for the banner part */
+    margin: 0;
+    border-radius: 0.4rem 0.4rem 0 0;
+  }
+
+  .banner > img {
+    height: 80%; /* Image takes most of the banner */
+    top: 5%;
+  }
+
+  .banner > p:first-child { /* Tag like 'New' */
+    font-size: 10px;
+  }
+
+  .banner > p:last-child { /* Offer text */
+    font-size: 10px;
+  }
+
+  .product__details {
+    width: 100%;
+    padding: 0.5rem;
+    gap: 0.4rem;
+    align-items: center; /* Center details content */
+  }
+
+  .name__and__pricing {
+     align-items: center;
+     width: 100%;
+     padding-bottom: 0.5rem;
+     gap: 0.5rem;
+  }
+
+  .product__details .title {
+    font-size: 1rem; /* Slightly larger for readability if it's the main title */
+    text-align: center;
+  }
+
+  .pricing {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .pricing > p:first-child { /* Main price */
+    font-size: 1.2rem;
+  }
+  .pricing > p:nth-child(2) { /* Discount */
+    font-size: 1.1rem;
+  }
+
+  .rating__and__color {
+    width: 100%;
+    justify-content: space-around; /* Distribute rating and color */
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+  }
+
+  .lastLine {
+    flex-direction: column; /* Stack buttons */
+    gap: 0.5rem;
+  }
+
+  .lastLine > .addToCartButtonSection,
+  .lastLine > .qtySection {
+    flex: 1 1 100%; /* Make them full width */
+    width: 100%;
+  }
+
+  .addToCartBtn {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .qtySection {
+    padding: 6px 12px;
+  }
+
+  .addToFavouritesSection {
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 6px 0;
+  }
+}
